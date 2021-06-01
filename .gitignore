@@ -1,0 +1,10 @@
+# UiPath Studio
+*PackageCache.json
+*ProjectSettings.json
+*Exceptions_Screenshots/
+*.settings/
+*.cache
+*.props
+*.backup
+*AllDependencies.json
+*.local/
