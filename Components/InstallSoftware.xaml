@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="in_TransactionItem" Type="InArgument(sd:DataRow)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>970,5066</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>970,4896</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -69,7 +69,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="This workflow looks at the transactionItem and invokes the corresponding installation workflow if the dictionary value is true." DisplayName="Switch" Expression="[in_TransactionItem(0).ToString]" sap:VirtualizedContainerService.HintSize="917,5001" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+  <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="This workflow looks at the transactionItem and invokes the corresponding installation workflow if the dictionary value is true." DisplayName="Switch" Expression="[in_TransactionItem(0).ToString]" sap:VirtualizedContainerService.HintSize="881,4831" sap2010:WorkflowViewState.IdRef="Switch`1_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -329,7 +329,7 @@
         </ui:LogMessage>
       </If.Else>
     </If>
-    <If x:Key="node" Condition="[in_TransactionItem(1).ToString = &quot;True&quot;]" sap:VirtualizedContainerService.HintSize="877,663" sap2010:WorkflowViewState.IdRef="If_14">
+    <If x:Key="node" Condition="[in_TransactionItem(1).ToString = &quot;True&quot;]" sap:VirtualizedContainerService.HintSize="755,493" sap2010:WorkflowViewState.IdRef="If_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -337,36 +337,25 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="498,505" sap2010:WorkflowViewState.IdRef="Sequence_20">
+        <Sequence sap:VirtualizedContainerService.HintSize="376,335" sap2010:WorkflowViewState.IdRef="Sequence_20">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="456,91" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Trace" Message="[&quot;Installing &quot; + in_TransactionItem(0).ToString]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Trace" Message="[&quot;Installing &quot; + in_TransactionItem(0).ToString]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="456,282" sap2010:WorkflowViewState.IdRef="CommentOut_4">
-            <ui:CommentOut.Body>
-              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="420,204" sap2010:WorkflowViewState.IdRef="Sequence_19">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="378,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Microsoft-Teams\Download-Microsoft-Teams.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-              </Sequence>
-            </ui:CommentOut.Body>
-          </ui:CommentOut>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Components\Node\installNode.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
         </Sequence>
       </If.Then>
       <If.Else>
