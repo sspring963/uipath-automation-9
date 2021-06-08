@@ -42,7 +42,7 @@ In order to run project you will need the following environment(s):
 Run the following git command to download the project locally:
 
 ```
-git clone [insert link]
+git clone https://github.com/sspring963/uipath-automation-9.git
 ```
 
 
