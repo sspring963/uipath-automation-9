@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ChromeInstall" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="882.4,1640" sap2010:WorkflowViewState.IdRef="ChromeInstall_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ChromeInstall" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="882.4,1762.4" sap2010:WorkflowViewState.IdRef="ChromeInstall_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="50">
+    <scg:List x:TypeArguments="x:String" Capacity="28">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -32,7 +32,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="27">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -62,7 +62,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ChromeInstall" sap:VirtualizedContainerService.HintSize="550.4,1475.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ChromeInstall" sap:VirtualizedContainerService.HintSize="550.4,1805.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="si:FileInfo" Name="ChromeDownload" />
     </Sequence.Variables>
@@ -72,19 +72,20 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Starting Chrome Download...&quot;]" />
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="508.8,667.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.google.com/chrome/browser-features/?xpv=3&amp;brand=VDKB&amp;gclid=b570bbc7430117ca125edb7d14fce2ce&amp;gclsrc=3p.ds&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=1009936%20%7C%20Chrome%20Win10%20%7C%20DR%20%7C%20ESS01%20%7C%20NA%20%7C%20US%20%7C%20en%20%7C%20Desk%20%7C%20SEM%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Top%20KWDS&amp;utm_term=google%20chrome&amp;utm_content=Desk%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Google%20Chrome%20Top%20KWDS">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="508.8,787.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.google.com/chrome/browser-features/?xpv=3&amp;brand=VDKB&amp;gclid=b570bbc7430117ca125edb7d14fce2ce&amp;gclsrc=3p.ds&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=1009936%20%7C%20Chrome%20Win10%20%7C%20DR%20%7C%20ESS01%20%7C%20NA%20%7C%20US%20%7C%20en%20%7C%20Desk%20%7C%20SEM%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Top%20KWDS&amp;utm_term=google%20chrome&amp;utm_content=Desk%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Google%20Chrome%20Top%20KWDS">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="475.2,564.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence sap2010:Annotation.AnnotationText="Opens the Edge Browser, Goes to the chrome download chrome, then closes the current tab. &#xD;&#xA;&#xD;&#xA;Needs user to accept Window's prompt to allow changes to PC." sap:VirtualizedContainerService.HintSize="475.2,684.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetLastDownloadedFile Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+&quot;\Downloads&quot;]" File="[ChromeDownload]" sap:VirtualizedContainerService.HintSize="433.6,409.6" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+            <ui:GetLastDownloadedFile Timeout="{x:Null}" sap2010:Annotation.AnnotationText="Downloads the chrome installer and check the User's Download Folder for the most recent file then assigns that file to variable ChromeDownload" DisplayName="Wait for Download" DownloadFolder="[Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+&quot;\Downloads&quot;]" File="[ChromeDownload]" sap:VirtualizedContainerService.HintSize="433.6,453.6" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
               <ui:GetLastDownloadedFile.Body>
                 <ActivityAction>
                   <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,200" sap2010:WorkflowViewState.IdRef="Sequence_3">
@@ -93,7 +94,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  js-download-hero'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click &quot;Download Chrome&quot;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -118,29 +119,48 @@
                   </Sequence>
                 </ActivityAction>
               </ui:GetLastDownloadedFile.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ui:GetLastDownloadedFile>
             <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
           </Sequence>
         </ActivityAction>
       </ui:OpenBrowser.Body>
     </ui:OpenBrowser>
-    <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="[Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+&quot;\Downloads\&quot; + ChromeDownload.ToString]" sap:VirtualizedContainerService.HintSize="508.8,88" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+    <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" sap2010:Annotation.AnnotationText="Starts the chrome installer by checking if the file is in the Downloads Folder." DisplayName="Start Process" FileName="[Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+&quot;\Downloads\&quot; + ChromeDownload.ToString]" sap:VirtualizedContainerService.HintSize="508.8,132" sap2010:WorkflowViewState.IdRef="StartProcess_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:StartProcess>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="508.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Chrome Installation intialized...&quot;]" />
-    <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image 'chrome.exe New'" sap:VirtualizedContainerService.HintSize="508.8,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
-      <ui:WaitImageAppear.Image>
-        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
-      </ui:WaitImageAppear.Image>
-      <ui:WaitImageAppear.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="00b5fea3-55df-43d5-8c24-a4a356a08128" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
+    <ui:OnUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" sap2010:Annotation.AnnotationText="Waits 60 seconds for chrome to open then kills chrome process&#xD;&#xA;" ContinueOnError="True" DisplayName="On Element Appear 'Chrome'" sap:VirtualizedContainerService.HintSize="508.8,448" sap2010:WorkflowViewState.IdRef="OnUiElementAppear_1" RepeatForever="True">
+      <ui:OnUiElementAppear.Body>
+        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,227.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="chrome" />
+        </Sequence>
+      </ui:OnUiElementAppear.Body>
+      <ui:OnUiElementAppear.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="94ee7a3e-0d1e-4359-9987-5b3f8c5960df" InformativeScreenshot="163c50f9179ed316a7472ae2b6fb822a" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;&lt;wnd cls='MSTaskSwWClass' title='Running applications' /&gt;&lt;wnd cls='MSTaskListWClass' title='Running applications' /&gt;&lt;ctrl name='Running applications' role='tool bar' /&gt;&lt;ctrl automationid='Chrome' idx='2' name='Google Chrome - 1 running window' role='push button' /&gt;" TimeoutMS="4500">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>
         </ui:Target>
-      </ui:WaitImageAppear.Target>
-    </ui:WaitImageAppear>
-    <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" AppliesTo="OnlyCurrentSession" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="508.8,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome" />
+      </ui:OnUiElementAppear.Target>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:OnUiElementAppear>
   </Sequence>
 </Activity>
