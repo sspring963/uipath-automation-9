@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="MicrosoftTeamsTest" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="970,797" sap2010:WorkflowViewState.IdRef="MicrosoftTeamsTest_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="NodeJsTest" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="970,797" sap2010:WorkflowViewState.IdRef="NodeJsTest_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
       <x:String>System.Activities</x:String>
@@ -25,7 +25,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="34">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="17">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -43,36 +43,18 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.ServiceModel</AssemblyReference>
-      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
-      <AssemblyReference>System.ValueTuple</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="MicrosoftTeamsTest" sap:VirtualizedContainerService.HintSize="376,412" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="NodeJsTest" sap:VirtualizedContainerService.HintSize="376,312" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="fileExists" />
-      <Variable x:TypeArguments="x:String" Name="filePath" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_1">
-      <Assign.To>
-        <OutArgument x:TypeArguments="x:String">[filePath]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="x:String">["C:\Users\" + Environment.UserName + "\AppData\Local\Microsoft\Teams\Update.exe"]</InArgument>
-      </Assign.Value>
-    </Assign>
-    <ui:PathExists DisplayName="Path Exists" Exists="[fileExists]" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[filePath]" PathType="File" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Exists? : &quot; + fileExists.ToString]" />
+    <ui:PathExists DisplayName="Path Exists" Exists="[fileExists]" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="C:\Program Files (x86)\nodejs\node.exe" PathType="File" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Node installed? &quot;+fileExists.ToString]" />
   </Sequence>
 </Activity>

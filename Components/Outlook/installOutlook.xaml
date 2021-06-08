@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="installOutlook" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="779.333333333333,2042.66666666667" sap2010:WorkflowViewState.IdRef="installOutlook_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="installOutlook" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="970,2040" sap2010:WorkflowViewState.IdRef="installOutlook_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
       <x:String>System.Activities</x:String>
@@ -65,7 +65,7 @@
       <AssemblyReference>netstandard</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Sign In to Microsoft Office to install Office 365 with Outlook." DisplayName="installOutlook" sap:VirtualizedContainerService.HintSize="508.666666666667,1978" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Sign In to Microsoft Office to install Office 365 with Outlook." DisplayName="installOutlook" sap:VirtualizedContainerService.HintSize="509,1975" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Email" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -76,19 +76,19 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.666666666667,1855.33333333333" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://login.microsoftonline.com/common/oauth2/authorize?client_id=4345a7b9-9a63-4910-a426-35363201d503&amp;redirect_uri=https%3A%2F%2Fwww.office.com%2Flanding&amp;response_type=code%20id_token&amp;scope=openid%20profile&amp;response_mode=form_post&amp;nonce=637586672474240958.NjQ5YTk3YTItZmRjZS00OTYyLTg5ZjQtNjRhZDkwYjVkODgzMmUwMjdhODEtOTM3Zi00MDMyLTg5NDItMTZiODJhNmZlNDM3&amp;ui_locales=en-US&amp;mkt=en-US&amp;client-request-id=bf3aa7ee-530d-450a-908f-4537c8ab6076&amp;state=boaeSDQPY50QDuLwLkGTi2ymmfYGBv5WGGwASMkqoI14vhShopU4ORQAp3XHQNw4oxr43XIUmor0xD2JN2r1kDglhd9GmCHXnH_p6x7xcRr2B02pANQXlDqQs6p9QGLjaDTYTa8XhLP-XLX05iyX8U9HyJP58ryfcf4LW-GU-7ypKW9D4G6xWIZhOJSIDMmvH-N_beQeNytEdBDDVhBT9rNMUxEkmGlW3S2SU493JbDrT2oUkDxg7Nk-7Yy65CaMY1oPaM7q0Q8rEK5GkJZiRg&amp;x-client-SKU=ID_NETSTANDARD2_0&amp;x-client-ver=6.8.0.0">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,1852" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://login.microsoftonline.com/common/oauth2/authorize?client_id=4345a7b9-9a63-4910-a426-35363201d503&amp;redirect_uri=https%3A%2F%2Fwww.office.com%2Flanding&amp;response_type=code%20id_token&amp;scope=openid%20profile&amp;response_mode=form_post&amp;nonce=637586672474240958.NjQ5YTk3YTItZmRjZS00OTYyLTg5ZjQtNjRhZDkwYjVkODgzMmUwMjdhODEtOTM3Zi00MDMyLTg5NDItMTZiODJhNmZlNDM3&amp;ui_locales=en-US&amp;mkt=en-US&amp;client-request-id=bf3aa7ee-530d-450a-908f-4537c8ab6076&amp;state=boaeSDQPY50QDuLwLkGTi2ymmfYGBv5WGGwASMkqoI14vhShopU4ORQAp3XHQNw4oxr43XIUmor0xD2JN2r1kDglhd9GmCHXnH_p6x7xcRr2B02pANQXlDqQs6p9QGLjaDTYTa8XhLP-XLX05iyX8U9HyJP58ryfcf4LW-GU-7ypKW9D4G6xWIZhOJSIDMmvH-N_beQeNytEdBDDVhBT9rNMUxEkmGlW3S2SU493JbDrT2oUkDxg7Nk-7Yy65CaMY1oPaM7q0Q8rEK5GkJZiRg&amp;x-client-SKU=ID_NETSTANDARD2_0&amp;x-client-ver=6.8.0.0">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="418,1752.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence sap:VirtualizedContainerService.HintSize="418,1751" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1660.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1659" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="GetCredentials" />
               </Sequence.Variables>
@@ -97,7 +97,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:GetSecureCredential CredentialType="Generic" DisplayName="Get secure credential" sap:VirtualizedContainerService.HintSize="334,80.6666666666667" sap2010:WorkflowViewState.IdRef="GetSecureCredential_2" Password="[Password]" PersistanceType="Enterprise" Result="[GetCredentials]" Target="Office_Credential" Username="[Email]" />
+              <ui:GetSecureCredential CredentialType="Generic" DisplayName="Get secure credential" sap:VirtualizedContainerService.HintSize="334,79" sap2010:WorkflowViewState.IdRef="GetSecureCredential_2" Password="[Password]" PersistanceType="Enterprise" Result="[GetCredentials]" Target="Office_Credential" Username="[Email]" />
               <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Select Another Account " sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
@@ -156,7 +156,7 @@
               </ui:Click>
               <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Secure Password" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[Password]">
                 <ui:TypeSecureText.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="945043a2-b93e-45ee-a177-5044d32eb5bc" InformativeScreenshot="40d37a23ffe7815b6f7a0d79689b240a" Selector="&lt;html app='msedge.exe' title='Sign in to your Microsoft account' /&gt;&lt;webctrl tag='INPUT' type='password' name='passwd' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="945043a2-b93e-45ee-a177-5044d32eb5bc" InformativeScreenshot="40d37a23ffe7815b6f7a0d79689b240a" Selector="&lt;html app='msedge.exe' title='Sign in *' /&gt;&lt;webctrl tag='INPUT' type='password' name='passwd' /&gt;">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
@@ -178,7 +178,7 @@
                   </ui:CursorPosition>
                 </ui:Click.CursorPosition>
                 <ui:Click.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb8e86a0-4d26-4726-8a88-12adc8a77bcf" InformativeScreenshot="8f6aaed99e2c0882928c34708d565556" Selector="&lt;html app='msedge.exe' title='Sign in to your Microsoft account' /&gt;&lt;webctrl tag='INPUT' type='submit' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb8e86a0-4d26-4726-8a88-12adc8a77bcf" InformativeScreenshot="8f6aaed99e2c0882928c34708d565556" Selector="&lt;html app='msedge.exe' title='Sign in to *' /&gt;&lt;webctrl tag='INPUT' type='submit' /&gt;">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
