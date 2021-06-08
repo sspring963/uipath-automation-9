@@ -197,7 +197,7 @@
                   </ui:CursorPosition>
                 </ui:Click.CursorPosition>
                 <ui:Click.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="797199f8-bfd4-418f-8b1e-deca0ef1fbcf" InformativeScreenshot="15ea468dad5c27b1c79bcf97308d118d" Selector="&lt;ctrl automationid='Backstage_ToolsPage' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="797199f8-bfd4-418f-8b1e-deca0ef1fbcf" InformativeScreenshot="7c1dd5bde2da98077d8ec20df49e52c2" Selector="&lt;ctrl name='Tools' /&gt;">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
