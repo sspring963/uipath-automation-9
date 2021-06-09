@@ -30,11 +30,24 @@ This project is a UiPath implemented automation that will install, based on user
 
 ### Java Development Kit Setup
 - An Oracle account is required to install JDK 11
-- Create an Oracle by clicking [here](https://profile.oracle.com/myprofile/account/create-account.jspx)
+- Create an Oracle account by clicking [here](https://profile.oracle.com/myprofile/account/create-account.jspx)
 - After the user logs in, the automation will continue as expected
 
 
 ### Local Setup
+
+The following programs will need to be run as Administrator:
+- UiPath User Service
+- UiPath Studio
+
+To accomplish this, follow these instructions:
+1. Right click UiPath Studio.exe > Properties
+2. GOTO Compatability > Check "Run this program as an Administrator" > OK
+3. Open task Manager
+4. Right click "UiPath User Service" in Processes
+5. GOTO Compatability > Check "Run this program as an Administrator" > OK
+6. Right click on "UiPath User Service" > End Task
+7. Restart UiPath Studio
 
 Run the following git command to download the project locally:
 
@@ -53,4 +66,10 @@ To run this automation from UiPath studio, click the Main.xaml to open the autom
   - [Jeffrey Breiner](https://github.com/JeffreyBreiner)
   - [Sean Lee](https://github.com/lees88)
   - [Sean Spring](https://github.com/sspring963)
+
+- Team Guillermo
+  - [Guillermo Ventura-Reyes](https://github.com/GuillermoVenturaReyes)
+  - [Kirby Chan](https://github.com/Kirbyquake)
+  - [Anthony Hernandez](https://github.com/TeitoWolf)
+  - [Bronwyn Davies](https://github.com/bronwyndavies)
 

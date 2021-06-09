@@ -22,3 +22,9 @@ To accomplish this, follow these instructions:
 5. GOTO Compatability > Check "Run this program as an Administrator" > OK
 6. Right click on "UiPath User Service" > End Task
 7. Restart UiPath Studio
+
+Important notes:
+- Spring Tool Stuite, Node require Chrome installed.
+- Outlook requires Microsoft 365 credentials.
+- Java requires oracle credentials.
+- Git, Firefox require work with clean installs. Must delete local folders before reinstalling.
