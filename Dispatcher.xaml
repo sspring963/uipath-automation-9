@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>970,1317</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>970,1332</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Dispatcher_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="34">
@@ -78,7 +78,7 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This Dispatcher gets the list of software the user wants installed on their computer. It will ask the user to check the software options they want. It creates a JSON string which is then converted to a dictionary.&#xA;&#xA;Precondition: None&#xA;Post-Condition: Dictionary of techs to install" DisplayName="Dispatcher" sap:VirtualizedContainerService.HintSize="456,1252" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This Dispatcher gets the list of software the user wants installed on their computer. It will ask the user to check the software options they want. It creates a JSON string which is then converted to a dictionary. The dictionary is then turned into a datatable.&#xA;&#xA;Precondition: None&#xA;Post-Condition: Datatable of techs to install" DisplayName="Dispatcher" sap:VirtualizedContainerService.HintSize="456,1267" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Default="[{&quot;Microsoft Teams&quot;, &quot;Outlook&quot;, &quot;Google Chrome&quot;, &quot;FireFox&quot;, &quot;Git and Git Bash&quot;, &quot;Java (JDK 11)&quot;, &quot;Spring Tool Suite&quot;, &quot;Node&quot;}]" Name="TechInputArray" />
       <Variable x:TypeArguments="x:String" Name="results" />

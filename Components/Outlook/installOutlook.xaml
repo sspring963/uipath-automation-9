@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="installOutlook" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1153.33333333333,1919.33333333333" sap2010:WorkflowViewState.IdRef="installOutlook_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="installOutlook" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="970,1960" sap2010:WorkflowViewState.IdRef="installOutlook_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
       <x:String>System.Activities</x:String>
@@ -64,10 +64,9 @@
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>netstandard</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Sign In to Microsoft Office to install Office 365 with Outlook." DisplayName="installOutlook" sap:VirtualizedContainerService.HintSize="508.666666666667,1854.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Sign In to Microsoft Office to install Office 365 with Outlook.&#xD;&#xA;&#xD;&#xA;Pre-condition: Requires paid account of Office 365.&#xD;&#xA;Post-condition: Outlook will be installed on computer." DisplayName="installOutlook" sap:VirtualizedContainerService.HintSize="509,1895" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Email" />
       <Variable x:TypeArguments="x:String" Name="Password" />
@@ -78,7 +77,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.666666666667,1732" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://login.microsoftonline.com/common/oauth2/authorize?client_id=4345a7b9-9a63-4910-a426-35363201d503&amp;redirect_uri=https%3A%2F%2Fwww.office.com%2Flanding&amp;response_type=code%20id_token&amp;scope=openid%20profile&amp;response_mode=form_post&amp;nonce=637586672474240958.NjQ5YTk3YTItZmRjZS00OTYyLTg5ZjQtNjRhZDkwYjVkODgzMmUwMjdhODEtOTM3Zi00MDMyLTg5NDItMTZiODJhNmZlNDM3&amp;ui_locales=en-US&amp;mkt=en-US&amp;client-request-id=bf3aa7ee-530d-450a-908f-4537c8ab6076&amp;state=boaeSDQPY50QDuLwLkGTi2ymmfYGBv5WGGwASMkqoI14vhShopU4ORQAp3XHQNw4oxr43XIUmor0xD2JN2r1kDglhd9GmCHXnH_p6x7xcRr2B02pANQXlDqQs6p9QGLjaDTYTa8XhLP-XLX05iyX8U9HyJP58ryfcf4LW-GU-7ypKW9D4G6xWIZhOJSIDMmvH-N_beQeNytEdBDDVhBT9rNMUxEkmGlW3S2SU493JbDrT2oUkDxg7Nk-7Yy65CaMY1oPaM7q0Q8rEK5GkJZiRg&amp;x-client-SKU=ID_NETSTANDARD2_0&amp;x-client-ver=6.8.0.0">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,1731" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://login.microsoftonline.com/common/oauth2/authorize?client_id=4345a7b9-9a63-4910-a426-35363201d503&amp;redirect_uri=https%3A%2F%2Fwww.office.com%2Flanding&amp;response_type=code%20id_token&amp;scope=openid%20profile&amp;response_mode=form_post&amp;nonce=637586672474240958.NjQ5YTk3YTItZmRjZS00OTYyLTg5ZjQtNjRhZDkwYjVkODgzMmUwMjdhODEtOTM3Zi00MDMyLTg5NDItMTZiODJhNmZlNDM3&amp;ui_locales=en-US&amp;mkt=en-US&amp;client-request-id=bf3aa7ee-530d-450a-908f-4537c8ab6076&amp;state=boaeSDQPY50QDuLwLkGTi2ymmfYGBv5WGGwASMkqoI14vhShopU4ORQAp3XHQNw4oxr43XIUmor0xD2JN2r1kDglhd9GmCHXnH_p6x7xcRr2B02pANQXlDqQs6p9QGLjaDTYTa8XhLP-XLX05iyX8U9HyJP58ryfcf4LW-GU-7ypKW9D4G6xWIZhOJSIDMmvH-N_beQeNytEdBDDVhBT9rNMUxEkmGlW3S2SU493JbDrT2oUkDxg7Nk-7Yy65CaMY1oPaM7q0Q8rEK5GkJZiRg&amp;x-client-SKU=ID_NETSTANDARD2_0&amp;x-client-ver=6.8.0.0">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
